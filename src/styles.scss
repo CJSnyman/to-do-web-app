@@ -1,0 +1,147 @@
+:root {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600;
+}
+
+*,
+::before *,
+::after * {
+    box-sizing: border-box;
+}
+
+.light {
+    background-color: rgb(240, 240, 200);
+    color: black;
+
+    button.main-section-heading {
+        color: black;
+    }
+}
+
+button {
+    border: 2px solid rgb(175, 87, 175);
+    background-color: plum;
+    border-radius: 1ch;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+        transform: rotateZ(2deg) scale(1.1);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgb(175, 87, 175);
+        border-color: plum;
+    }
+}
+
+html {
+    background-color: rgb(35, 35, 44);
+    color: white;
+}
+
+body {
+    margin: 0;
+    min-width: 20rem;
+}
+
+#root {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        padding-inline: max(3rem, 15vw);
+    }
+}
+
+header {
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        h1 {
+            font-size: 3rem;
+            line-height: 0.9;
+        }
+
+        .heading-addTodo {
+            aspect-ratio: 1;
+            font-size: 1.5rem;
+            width: 3rem;
+            border-radius: 50%;
+        }
+    }
+
+    form {
+        padding-bottom: 1.5rem;
+        position: relative;
+        font-size: 1.125rem;
+
+        section {
+            padding-bottom: 0.5rem;
+        }
+
+        .time {
+            margin-left: 1.5rem;
+        }
+
+        .form-buttons {
+            button {
+                margin: 0.125rem;
+            }
+            .form-addTodo {
+                aspect-ratio: 1;
+                font-size: 1.125rem;
+                border-radius: 50%;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+}
+
+.main-section {
+    margin-bottom: 1rem;
+
+    p {
+        margin: 0;
+    }
+
+    .main-section-heading {
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+
+    article {
+        border: double 0.4rem rgb(180, 180, 160);
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 2ch;
+
+        .todoInfo {
+            padding-left: 0.75rem;
+            h2 {
+                margin-bottom: 0.2rem;
+            }
+
+            p {
+                padding-left: 0.75rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: plum;
+    margin-top: auto;
+    padding-block: 0.25rem;
+}
