@@ -12,4 +12,8 @@ I was able too build this project by doing research on [Redux Toolkit](https://r
 
 The biggest part of my learning came from youtube creators such as [Matt Pocock](http://www.youtube.com/@mattpocockuk), [developedbyed](http://www.youtube.com/@developedbyed), [Josh tried coding](http://www.youtube.com/@joshtriedcoding), [Web Dev Simplified](http://www.youtube.com/@WebDevSimplified), [Kevin Powell](http://www.youtube.com/@KevinPowell) and [Tech with Tim](http://www.youtube.com/@TechWithTim).
 
+## License
+
+[MIT](./LICENSE.md)
+
 _This has been my first attempt at writing a README._
